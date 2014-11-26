@@ -11,6 +11,8 @@ Rails.application.routes.draw do
   	resources :skills, except: [:index, :show, :create, :new, :edit]
   end
 
+  resources :dashboards
+
   resources :titles, except: [:new, :edit]
   
   post '/login', to: 'users#login'
